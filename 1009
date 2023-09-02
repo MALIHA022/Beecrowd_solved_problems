@@ -1,0 +1,10 @@
+# 1009
+
+name = input()
+main = float(input())
+sale = float(input())
+
+extra = sale*0.15
+total = float(main + extra)
+
+print("TOTAL = R$ %0.2f"%total)
