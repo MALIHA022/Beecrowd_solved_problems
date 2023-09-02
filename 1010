@@ -1,0 +1,13 @@
+# 1010
+
+inp1 = input()
+inp2 = input()
+
+unit1 = float(inp1.split(" ")[1])
+unit2 = float(inp2.split(" ")[1])
+
+price1 = float(inp1.split(" ")[2])
+price2 = float(inp2.split(" ")[2])
+total = price1*unit1 + price2*unit2
+
+print("VALOR A PAGAR: R$ %0.2f"%total)
