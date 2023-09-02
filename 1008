@@ -1,0 +1,10 @@
+# 1008
+
+num = int(input())
+hours = int(input())
+amount = float(input())
+
+salary = float(hours*amount)
+
+print("NUMBER =",num)
+print("SALARY = U$ %0.2f"%salary)
