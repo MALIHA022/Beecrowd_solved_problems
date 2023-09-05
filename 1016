@@ -1,0 +1,5 @@
+inp = int(input())
+
+distance = 2*inp
+
+print(distance,"minutos")
