@@ -1,0 +1,17 @@
+note = int(input())
+print(note)
+
+note1 = note//100
+print(note1,"nota(s) de R$ 100,00")
+note1 = (note%100)
+print(note1//50,"nota(s) de R$ 50,00")
+note1 = (note1%50)
+print(note1//20,"nota(s) de R$ 20,00")
+note1 = (note1%20)
+print(note1//10,"nota(s) de R$ 10,00")
+note1 = (note1%10)
+print(note1//5,"nota(s) de R$ 5,00")
+note1 = (note1%5)
+print(note1//2,"nota(s) de R$ 2,00")
+note1 = (note1%2)
+print(note1//1,"nota(s) de R$ 1,00")
