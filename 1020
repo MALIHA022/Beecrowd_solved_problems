@@ -1,0 +1,7 @@
+day = int(input())
+
+years = day//365
+months = (day%365)//30
+days = day-(months*30+years*365)
+
+print(f"{years} ano(s)\n{months} mes(es)\n{days} dia(s)")
