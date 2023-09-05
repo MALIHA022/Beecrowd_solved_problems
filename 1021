@@ -1,0 +1,29 @@
+note = float(input())
+
+print("NOTAS:")
+note1 = note/100.00
+print(int(note1),"nota(s) de R$ 100.00")
+note1 = (note%100.00)
+print(int(note1/50.00),"nota(s) de R$ 50.00")
+note1 = (note1%50.00)
+print(int(note1/20.00),"nota(s) de R$ 20.00")
+note1 = (note1%20.00)
+print(int(note1/10.00),"nota(s) de R$ 10.00")
+note1 = (note1%10.00)
+print(int(note1/5.00),"nota(s) de R$ 5.00")
+note1 = (note1%5.00)
+print(int(note1/2.00),"nota(s) de R$ 2.00")
+
+print("MOEDAS:")
+coin1 = float("%.2f"%note1)%2.00
+print(int(coin1/1.00),"moeda(s) de R$ 1.00")
+coin1 = float("%.2f"%note1)%1.00
+print(int(coin1/0.50),"moeda(s) de R$ 0.50")
+coin1 = float("%.2f"%coin1)%0.50
+print(int(coin1/0.25),"moeda(s) de R$ 0.25")
+coin1 = float("%.2f"%coin1)%0.25
+print(int(coin1/0.10),"moeda(s) de R$ 0.10")
+coin1 = float("%.2f"%coin1)%0.10
+print(int(coin1/0.05),"moeda(s) de R$ 0.05")
+coin1 = float("%.2f"%coin1)%0.05
+print(int(coin1/0.01),"moeda(s) de R$ 0.01")
