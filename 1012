@@ -1,0 +1,17 @@
+inp = input()
+
+a = float(inp.split(" ")[0])
+b = float(inp.split(" ")[1])
+c = float(inp.split(" ")[2])
+
+triangle = 0.5*a*c
+circle = 3.14159*c**2
+trapezium = 0.5*(a+b)*c
+square = b**2
+rectangle = a*b
+
+print("TRIANGULO: %0.3f"%triangle)
+print("CIRCULO: %0.3f"%circle)
+print("TRAPEZIO: %0.3f"%trapezium)
+print("QUADRADO: %0.3f"%square)
+print("RETANGULO: %0.3f"%rectangle)
