@@ -1,0 +1,12 @@
+inp1 = input()
+inp2 = input()
+
+x1 = float(inp1.split(" ")[0])
+y1 = float(inp1.split(" ")[1])
+x2 = float(inp2.split(" ")[0])
+y2 = float(inp2.split(" ")[1])
+
+distance = (x2-x1)**2 +(y2-y1)**2
+result = distance**0.5
+
+print("%0.4f"%result)
