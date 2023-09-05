@@ -1,0 +1,6 @@
+x = int(input())
+y = float(input())
+
+result = float(x)/y
+
+print("%0.3f"%result,"km/l")
