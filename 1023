@@ -1,0 +1,37 @@
+city = 1
+while True:
+    N = int(input())
+    people = {}
+    x_total = 0
+    y_total = 0
+
+    if N==0:
+         break
+    else:
+        for inp in range(N):
+            inp = input()
+
+            X_resi = int(inp.split(" ")[0])
+            Y_con = int(inp.split(" ")[1])
+            Y_cons = Y_con//X_resi
+            x_total += X_resi
+            y_total += Y_con
+
+
+            
+            if Y_cons in people:
+                common = [people[Y_cons]+(X_resi)]
+                people[Y_cons] = sum(common)
+            else:
+                people[Y_cons] = X_resi
+
+            new_people = dict(sorted(people.items()))
+            
+        print(f"Cidade# {city}:")
+        for i,j in new_people.items():
+            print(f"{j}-{i}",end=" ")
+            
+        print("\nConsumo medio: %0.2f"%(y_total/x_total),"m3.")
+    
+        city += 1
+        print()
