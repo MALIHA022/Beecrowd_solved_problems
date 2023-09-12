@@ -1,0 +1,31 @@
+from fractions import Fraction
+
+num = int(input())
+i = 0
+while i<num:
+    eqn = input()
+
+    sep = eqn.split(" ")
+    N1 = int(sep[0])
+    D1 = int(sep[2])
+    sign = sep[3]
+    N2 = int(sep[4])
+    D2 = int(sep[6])
+
+    if sign == "+":
+        result = Fraction((N1*D2 + N2*D1),(D1*D2))
+        print(f"{N1*D2 + N2*D1}/{D1*D2} = {result.numerator}/{result.denominator}")
+   
+    if sign == "-":
+        result = Fraction((N1*D2 - N2*D1),(D1*D2))
+        print(f"{(N1*D2 - N2*D1) }/{D1*D2} = {result.numerator}/{result.denominator}")
+   
+    if sign == "*":
+        result = Fraction((N1*N2),(D1*D2))
+        print(f"{N1*N2}/{D1*D2} = {result.numerator}/{result.denominator}")
+   
+    if sign == "/":
+        result = Fraction((N1*D2),(N2*D1))
+        print(f"{N1*D2}/{N2*D1} = {result.numerator}/{result.denominator}")
+    
+    i +=1
